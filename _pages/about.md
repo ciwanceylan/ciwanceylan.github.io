@@ -1,23 +1,29 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Ciwan Ceylan</strong>
+description:
+  <a href="https://www.kth.se/rpl/division-of-robotics-perception-and-learning-1.779439">KTH Robotics, Perception and Learning (RPL)</a>
+  <br>
+  <a href="https://seb.se/">Skandinativska Enskilda Banken (SEB)</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: closeUpCut.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ciwan [at] kth.se</p>
+    <p>Stockholm, Sweden</p>
+
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm an industrial PhD student at KTH Royal Insitute of Technlogy and employed by SEB. Prof. [Florian Pokorny](https://www.kth.se/profile/fpokorny) is supervising my thesis and Salla Franzén is my manager at SEB.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research relates to advanced analytics for anti money laundering.
+Specifically, I'm interested in how recent advanced in machine learning and topological data analysis can be applied to financial transaction data for discovery of money laundering schemes.
+Each year [a vast amount of dirty money](https://www.fatf-gafi.org/faq/moneylaundering/) is laundered through the financial systems and financial insitutions are under preasure to address this. 
+The problem of discovering such schemes nevertheless remains very challenging from a machine learning perspective due to lack of labelled data, large data volumes and data secrecy.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently I'm working on anonymization methods using deep generative models which could allow financial institutions to share data without risking to compromise customer or business secrets.
