@@ -20,7 +20,7 @@ news: true
 social: true
 ---
 
-I'm an industrial PhD student at KTH Royal Insitute of Technlogy and employed by SEB. Prof. [Florian Pokorny](https://www.kth.se/profile/fpokorny) is supervising my thesis and Salla Franzén is my manager at SEB.
+I'm an industrial PhD student at KTH Royal Insitute of Technlogy and employed by SEB. I am part of the Wallenberg Artificial Intelligence, Autonomous Systems and Software Program (WASP), specifically WASP-AS batch 3. Prof. [Florian Pokorny](https://www.kth.se/profile/fpokorny) is supervising my thesis and Salla Franzén is my manager at SEB.
 
 My research relates to advanced analytics for anti money laundering.
 Specifically, I'm interested in how recent advanced in machine learning and topological data analysis can be applied to financial transaction data for discovery of money laundering schemes.
