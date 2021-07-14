@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Ciwan Ceylan | Ciwan Ceylan</title>
+<title>Ciwan Ceylan | master thesis proposals</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -23,7 +23,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/mscthesisproposals/">
 
 <!-- Open Graph -->
 
@@ -95,24 +95,52 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>A collection of thoughts about analytics, research and life.</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">master thesis proposals</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <h2 id="2020">2020</h2>
+
+<h3 id="large-scale--attributed-generation-of-complex-networks">Large scale / attributed generation of complex networks</h3>
+
+<p><strong>Start date:</strong> Autumn 2020</p>
+
+<p>Generative models are defined by the possibility to generate new samples after the model has been trained on some dataset. Recently, much progress has been made in training generative models for image data (e.g. using <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network">generative adversarial networks (GANs)</a>, <a href="https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73">variational autoencoders (VAEs)</a> and <a href="https://towardsdatascience.com/autoregressive-models-pixelcnn-e30734ede0c1">autoregressive models</a>). The fact that the performance of these models have not yet extended to other types of data, e.g. text, structured data and complex networks, indicate that they are largely reliant of the underlying model, i.e. the powerful convolutional neural network for images. While some progress have been made in recent years, it is important to explore new ways and models to be leveraged for these other data types. For this proposal, graphs and complex networks are in focus.</p>
+
+<p>Generative models for networks have a long history going back to random graph models such as the <a href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model">Erdős–Rényi model</a> studied in graph theory. 
+In this vein of “classical” generative models for networks we find widely used models such as <a href="https://www.cs.cmu.edu/~christos/PUBLICATIONS/siam04.pdf">R-MAT</a>, the <a href="http://tuvalu.santafe.edu/~aaronc/courses/5352/fall2013/csci5352_2013_L16.pdf">stochastic block model(SBM)</a> with extensions, e.g. <a href="https://arxiv.org/abs/1008.3926">degree-corrected</a> and the <a href="https://www.jstor.org/stable/2287037">exponential random graph model (ERGM)</a>.
+These models are still being worked on and extended today, e.g. <a href="https://arxiv.org/pdf/1705.10225.pdf">Bayesian SBMs</a>, <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227804">improved inference for ERGM</a> and <a href="https://ieeexplore.ieee.org/document/7877110">general implementation improvements</a>.</p>
+
+<p>Recently researches have been looking to more “modern” graph generation models by trying to leverage deep learning techniques. Typically a GAN, VAE or auto-regressive objective is used and combined with either a recurrent neural network, e.g. 
+<a href="https://arxiv.org/abs/1802.08773">GraphRNN</a> and
+<a href="https://arxiv.org/abs/1803.00816">NetGAN</a>,
+or a <a href="https://arxiv.org/abs/1609.02907">graph convolutional neural network</a>, e.g. 
+<a href="https://arxiv.org/pdf/1611.07308.pdf">Variational Graph Auto-Encoders</a>,
+<a href="http://arxiv.org/abs/1803.10459">Graphite</a> and
+<a href="https://arxiv.org/abs/1910.00760">GRAN</a>.
+But other types of models are also possible, such as <a href="https://www.frontiersin.org/articles/10.3389/fdata.2019.00003/full">Misc-GAN</a> which uses tools from the field of <a href="https://www.macalester.edu/~dshuman1/Papers/Journal/Shuman_et_al_SPM_2013.pdf">graph processing</a>.</p>
+
+<p>While these modern models are able to model much more complex networks in theory, they are still not fully mature. They don’t scale to as large networks as the classical models and they are often not implemented to account for node and edge attributes or directed graphs. It is in these area where we hope to make progress by proposing two different master’s thesis topics.</p>
+
+<p>The two topics we are offering are:</p>
+<ol>
+  <li>Attempting to scale up neural network based network generation models to work for very large but sparse graphs. The main idea is to use some hierarchical structure, getting inspiration from classical graph generation models or possibly include them as a step in a pipeline.</li>
+  <li>Extend a modern model to account for node attributes, weighted graphs, time-evolving graphs or directed graphs. All of these are possible directions and we will have to discuss what feel the most reasonable within the time scope of the thesis.</li>
+</ol>
+
+<h4 id="requirements">Requirements</h4>
+<ul>
+  <li>Background in machine learning or computer science.</li>
+  <li>Good implementation skills in Python using numpy, scipy etc..</li>
+  <li>Previous experience with Pytorch and/or graph processing library is a big plus.</li>
+  <li>For project 1 it is important that you feel comfortable with implementation as we will want to work with quite large datasets at some point during the project.</li>
+  <li>Project 2 could be treated more theoretically in which case you should be comfortable with mathematical exploration.</li>
+</ul>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/starting-a-blog/">Starting a blog</a></h3>
-        <p class="post-meta">August 18, 2020</p>
-        <p>My thoughts on why I would like to start a blog</p>
-      </li>
-    
-  </ul>
-
-  
-
+  </article>
 
 </div>
 
