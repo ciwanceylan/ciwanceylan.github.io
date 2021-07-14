@@ -1,0 +1,38 @@
+---
+---
+
+
+@InProceedings{pmlr-v139-ceylan21a,
+  title =    {Learning Node Representations Using Stationary Flow Prediction on Large Payment and Cash Transaction Networks},
+  author =       {Ceylan, Ciwan and Franz{\'e}n, Salla and Pokorny, Florian T.},
+  booktitle =    {Proceedings of the 38th International Conference on Machine Learning},
+  pages =    {1395--1406},
+  year =   {2021},
+  editor =   {Meila, Marina and Zhang, Tong},
+  volume =   {139},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {18--24 Jul},
+  publisher =    {PMLR},
+  pdf =    {http://proceedings.mlr.press/v139/ceylan21a/ceylan21a.pdf},
+  url =    {http://proceedings.mlr.press/v139/ceylan21a.html},
+  abstract =   {Banks are required to analyse large transaction datasets as a part of the fight against financial crime. Today, this analysis is either performed manually by domain experts or using expensive feature engineering. Gradient flow analysis allows for basic representation learning as node potentials can be inferred directly from network transaction data. However, the gradient model has a fundamental limitation: it cannot represent all types of of network flows. Furthermore, standard methods for learning the gradient flow are not appropriate for flow signals that span multiple orders of magnitude and contain outliers, i.e. transaction data. In this work, the gradient model is extended to a gated version and we prove that it, unlike the gradient model, is a universal approximator for flows on graphs. To tackle the mentioned challenges of transaction data, we propose a multi-scale and outlier robust loss function based on the Student-t log-likelihood. Ethereum transaction data is used for evaluation and the gradient models outperform MLP models using hand-engineered and node2vec features in terms of relative error. These results extend to 60 synthetic datasets, with experiments also showing that the gated gradient model learns qualitative information about the underlying synthetic generative flow distributions.}
+}
+
+
+
+@InProceedings{ceylan18a,
+  title =    {Conditional Noise-Contrastive Estimation of Unnormalised Models},
+  author =   {Ceylan, Ciwan and Gutmann, Michael U.},
+  booktitle =    {Proceedings of the 35th International Conference on Machine Learning},
+  pages =    {726--734},
+  year =   {2018},
+  editor =   {Dy, Jennifer and Krause, Andreas},
+  volume =   {80},
+  series =   {Proceedings of Machine Learning Research},
+  address =    {Stockholmsmässan, Stockholm Sweden},
+  month =    {10--15 Jul},
+  publisher =    {PMLR},
+  pdf =    {1806.03664.pdf},
+  url =    {http://proceedings.mlr.press/v80/ceylan18a.html},
+  abstract =   {Many parametric statistical models are not properly normalised and only specified up to an intractable partition function, which renders parameter estimation difficult. Examples of unnormalised models are Gibbs distributions, Markov random fields, and neural network models in unsupervised deep learning. In previous work, the estimation principle called noise-contrastive estimation (NCE) was introduced where unnormalised models are estimated by learning to distinguish between data and auxiliary noise. An open question is how to best choose the auxiliary noise distribution. We here propose a new method that addresses this issue. The proposed method shares with NCE the idea of formulating density estimation as a supervised learning problem but in contrast to NCE, the proposed method leverages the observed data when generating noise samples. The noise can thus be generated in a semi-automated manner. We first present the underlying theory of the new method, show that score matching emerges as a limiting case, validate the method on continuous and discrete valued synthetic data, and show that we can expect an improved performance compared to NCE when the data lie in a lower-dimensional manifold. Then we demonstrate its applicability in unsupervised deep learning by estimating a four-layer neural image model.}
+}
