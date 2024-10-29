@@ -1,6 +1,24 @@
 ---
 ---
 
+@inproceedings{10.1145/3627673.3679994,
+author = {Ceylan, Ciwan and Ghoorchian, Kambiz and Kragic, Danica},
+title = {Scalable Unsupervised Feature Selection with Reconstruction Error Guarantees via QMR Decomposition},
+year = {2024},
+isbn = {9798400704369},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi-org.focus.lib.kth.se/10.1145/3627673.3679994},
+doi = {10.1145/3627673.3679994},
+abstract = {Unsupervised feature selection (UFS) methods have garnered significant attention for their capability to eliminate redundant features without relying on class label information. However, their scalability to large datasets remains a challenge, rendering common UFS methods impractical for such applications. To address this issue, we introduce QMR-FS, a greedy forward filtering approach that selects linearly independent features up to a specified relative tolerance, ensuring that any excluded features can be reconstructed from the retained set within this tolerance. This is achieved through the QMR matrix decomposition, which builds upon the well-known QR decomposition. QMR-FS benefits from linear complexity relative to the number of instances and boasts exceptional performance due to its ability to leverage parallelized computation on both CPU and GPU. Despite its greedy nature, QMR-FS achieves comparable classification and clustering accuracies across multiple datasets when compared to other UFS methods, while achieving runtimes approximately 10 times faster than recently proposed scalable UFS methods for datasets ranging from 100 million to 1 billion elements.},
+booktitle = {Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
+pages = {3658–3662},
+numpages = {5},
+keywords = {feature selection, linear independence, scalability, unsupervised learning},
+location = {Boise, ID, USA},
+series = {CIKM '24}
+}
+
 
 @InProceedings{pmlr-v139-ceylan21a,
   title =    {Learning Node Representations Using Stationary Flow Prediction on Large Payment and Cash Transaction Networks},
