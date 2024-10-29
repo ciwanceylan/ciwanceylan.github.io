@@ -6,7 +6,7 @@ description:
   # <a href="https://www.kth.se/rpl/division-of-robotics-perception-and-learning-1.779439">KTH Robotics, Perception and Learning (RPL)</a>
   # <br>
   # <a href="https://seb.se/">Skandinaviska Enskilda Banken (SEB)</a>.
-  Greetings, traveller.
+  Grettings, and a warm welcome to my research profile! 
 
 profile:
   align: right
@@ -20,11 +20,22 @@ news: false
 social: true
 ---
 
-I'm an industrial PhD student at [KTH Royal Institute of Technology](https://www.kth.se/is/rpl) and employed by [SEB](https://sebgroup.com/). I am part of the [Wallenberg Artificial Intelligence, Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org/), specifically WASP-AS batch 3. Professor [Danica Kragic](https://www.kth.se/profile/dani) is supervising my thesis and Dr. [Kambiz Ghoorchian](https://se.linkedin.com/in/kambiz-ghoorchian) is my industrial supervisor at SEB.
 
-My research is centred around unsupervised representation learning for large graphs. Specifically, my thesis focuses on node embeddings and applications relevant for financial crime prevention, such as node classification, anomaly detection, network alignment and network flow prediction. My goal is that my research will contribute to the fight against [money laundering and terrorist financing](https://www.imf.org/external/np/leg/amlcft/eng/aml1.htm).
+I am an industrial PhD student at [KTH Royal Institute of Technology](https://www.kth.se/is/rpl) and a member of the [Wallenberg Artificial Intelligence, Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org/), supported by [SEB](https://sebgroup.com/). My thesis, co-supervised by Professor [Danica Kragic](https://www.kth.se/profile/dani) at KTH and Dr. [Kambiz Ghoorchian](https://se.linkedin.com/in/kambiz-ghoorchian) at SEB, focuses on **unsupervised representation learning for large financial transaction graphs**.
 
-I am also interested in anonymization methods which can be applied to complex financial data, such as generative modelling of transaction graphs. Currently, financial institutes’ ability to publicly share datasets is limited by the risk of compromising customers and leak business secrets, and anonymization methods are a first step towards overcoming these hindrances.
+My research centers on **scalable methods for learning node embeddings** that capture critical features like **edge directionality** and **edge flow**, both essential for modeling financial transaction networks. By developing techniques that incorporate these characteristics, I aim to enhance anomaly detection systems used in the fight against [money laundering and terrorist financing](https://www.imf.org/external/np/leg/amlcft/eng/aml1.htm), providing graph-informed insights to identify suspicious activities.
+
+Beyond financial transaction graphs, the unsupervised learning techniques I develop have broad applicability. I explore their potential in various graph-related tasks, including **node classification**, **graph alignment**, **link prediction**, **node clustering**, and **network flow prediction**. I am also passionate about unsupervised learning methods beyond graph data, and I have previously published a paper on **contrastive learning for image data** as part of my master’s thesis.
+
+
+
+<!-- I'm an industrial PhD student at [KTH Royal Institute of Technology](https://www.kth.se/is/rpl) and employed by [SEB](https://sebgroup.com/). I am part of the [Wallenberg Artificial Intelligence, Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org/), specifically WASP-AS batch 3. Professor [Danica Kragic](https://www.kth.se/profile/dani) is supervising my thesis and Dr. [Kambiz Ghoorchian](https://se.linkedin.com/in/kambiz-ghoorchian) is my industrial supervisor at SEB.
+
+My research is centred around unsupervised representation learning for large graphs. Specifically, my thesis focuses on **scalable** methods for learning node embeddings that capture **edge directionality** and **edge flow**. Directionality, flow and scale are all characteristics of financial transaction graphs. Ultimately, my aim is that my research will contribute to the fight against [money laundering and terrorist financing](https://www.imf.org/external/np/leg/amlcft/eng/aml1.htm) by strengthening anomaly detection system with graph knowledge.
+
+Unsupervised learning of node embeddings has a wide range of applications beyond anomly detection on financial transaction graphs. In my works, I also demonstrate how my models can be used for node classification, graph alignment, graph comparison, link prediction, node clustering and network flow prediction. 
+
+I also have a general interest in unsupervised learning methods, and have previously published a paper on contrastive learning with application to image data as part of my master's thesis. -->
 
 <!-- I'm an industrial PhD student at KTH Royal Institute of Technology and employed by SEB. I am part of the Wallenberg Artificial Intelligence, Autonomous Systems and Software Program (WASP), specifically WASP-AS batch 3. Prof. [Danica Kragic](https://www.kth.se/profile/dani) is supervising my thesis and Dr. [Kambiz Ghoorchian](https://se.linkedin.com/in/kambiz-ghoorchian) is my industrial supervisor at SEB.
 
