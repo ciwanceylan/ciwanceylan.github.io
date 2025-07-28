@@ -1,6 +1,28 @@
 ---
 ---
 
+
+
+@article{ceylan2025disobeying,
+title={Disobeying {D}irections: {S}witching {R}andom {W}alk {F}ilters for {U}nsupervised {N}ode {E}mbedding {L}earning on {D}irected {G}raphs},
+author={Ciwan Ceylan and Kambiz Ghoorchian and Danica Kragic},
+journal={Transactions on Machine Learning Research},
+year={2025},
+url={https://openreview.net/forum?id=yngjRgVA5A},
+abstract={Unsupervised learning of node embeddings for directed graphs (digraphs) requires careful handling to ensure unbiased modelling. This paper addresses two key challenges: (1) the obstruction of information propagation in random walk and message-passing methods due to local sinks, and (2) the representation of multiple multi-step directed neighbourhoods, arising from the distinction between in- and out-neighbours. These challenges are interconnected—local sinks can be mitigated by treating the graph as undirected, but this comes at the cost of discarding all directional information. We make two main contributions to unsupervised embedding learning for digraphs. First, we introduce ReachNEs (Reachability Node Embeddings), a general framework for analysing embedding models and diagnosing local sink behaviour on digraphs. ReachNEs defines the reachability filter, a matrix polynomial over normalized adjacency matrices that captures multi-step, direction-sensitive proximity. It unifies the analysis of message-passing and random walk models, making its insights applicable across a wide range of embedding methods. Second, we propose DirSwitch, a novel embedding model that resolves both local sink bias and neighbourhood multiplicity via switching random walks. These walks use directed edges for local steps, preserving directional structure, then switch to undirected edges for long-range transitions, enabling escape from local sinks and improving information dispersal. Empirical results on node classification benchmarks demonstrate that DirSwitch consistently outperforms state-of-the-art unsupervised digraph proximity embedding methods, and also serves as a flexible digraph extension for self-supervised graph neural networks.}
+}
+
+@article{ceylan2025fullrank,
+title={Full-{R}ank {U}nsupervised {N}ode {E}mbeddings for {D}irected {G}raphs via {M}essage {A}ggregation},
+author={Ciwan Ceylan and Kambiz Ghoorchian and Danica Kragic},
+journal={Transactions on Machine Learning Research},
+year={2025},
+url={https://openreview.net/forum?id=3ECbEZg2If},
+abstract={Linear message-passing models have emerged as compelling alternatives to non-linear graph neural networks for unsupervised node embedding learning, due to their scalability and competitive performance on downstream tasks. However, we identify a fundamental flaw in recently proposed linear models that combine embedding aggregation with concatenation during each message-passing iteration: rank deficiency. A rank-deficient embedding matrix contains column vectors which take arbitrary values, leading to ill-conditioning that degrades downstream task accuracy, particularly in unsupervised tasks such as graph alignment. We deduce that repeated embedding aggregation and concatenation introduces linearly dependent features, causing rank deficiency. To address this, we propose ACC (Aggregate, Compress, Concatenate), a novel model that avoids redundant feature computation by applying aggregation to the messages from the previous iteration, rather than the embeddings. Consequently, ACC generates full-rank embeddings, significantly improving graph alignment accuracy from 10% to 60% compared to rank-deficient embeddings, while also being faster to compute. Additionally, ACC employs directed message-passing and achieves node classification accuracies comparable to state-of-the-art self-supervised graph neural networks on directed graph benchmarks, while also being over 70 times faster on graphs with over 1 million edges.},
+}
+
+
+
 @inproceedings{10.1145/3627673.3679994,
 author = {Ceylan, Ciwan and Ghoorchian, Kambiz and Kragic, Danica},
 title = {Scalable Unsupervised Feature Selection with Reconstruction Error Guarantees via QMR Decomposition},
@@ -8,7 +30,7 @@ year = {2024},
 isbn = {9798400704369},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi-org.focus.lib.kth.se/10.1145/3627673.3679994},
+url = {https://doi.org/10.1145/3627673.3679994},
 doi = {10.1145/3627673.3679994},
 abstract = {Unsupervised feature selection (UFS) methods have garnered significant attention for their capability to eliminate redundant features without relying on class label information. However, their scalability to large datasets remains a challenge, rendering common UFS methods impractical for such applications. To address this issue, we introduce QMR-FS, a greedy forward filtering approach that selects linearly independent features up to a specified relative tolerance, ensuring that any excluded features can be reconstructed from the retained set within this tolerance. This is achieved through the QMR matrix decomposition, which builds upon the well-known QR decomposition. QMR-FS benefits from linear complexity relative to the number of instances and boasts exceptional performance due to its ability to leverage parallelized computation on both CPU and GPU. Despite its greedy nature, QMR-FS achieves comparable classification and clustering accuracies across multiple datasets when compared to other UFS methods, while achieving runtimes approximately 10 times faster than recently proposed scalable UFS methods for datasets ranging from 100 million to 1 billion elements.},
 booktitle = {Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
@@ -31,7 +53,6 @@ series = {CIKM '24}
   series =   {Proceedings of Machine Learning Research},
   month =    {18--24 Jul},
   publisher =    {PMLR},
-  pdf =    {icml_2021_ggf.pdf},
   url =    {http://proceedings.mlr.press/v139/ceylan21a.html},
   abstract =   {Banks are required to analyse large transaction datasets as a part of the fight against financial crime. Today, this analysis is either performed manually by domain experts or using expensive feature engineering. Gradient flow analysis allows for basic representation learning as node potentials can be inferred directly from network transaction data. However, the gradient model has a fundamental limitation: it cannot represent all types of of network flows. Furthermore, standard methods for learning the gradient flow are not appropriate for flow signals that span multiple orders of magnitude and contain outliers, i.e. transaction data. In this work, the gradient model is extended to a gated version and we prove that it, unlike the gradient model, is a universal approximator for flows on graphs. To tackle the mentioned challenges of transaction data, we propose a multi-scale and outlier robust loss function based on the Student-t log-likelihood. Ethereum transaction data is used for evaluation and the gradient models outperform MLP models using hand-engineered and node2vec features in terms of relative error. These results extend to 60 synthetic datasets, with experiments also showing that the gated gradient model learns qualitative information about the underlying synthetic generative flow distributions.}
 }
@@ -50,7 +71,6 @@ series = {CIKM '24}
   address =    {Stockholmsmässan, Stockholm Sweden},
   month =    {10--15 Jul},
   publisher =    {PMLR},
-  pdf =    {1806.03664.pdf},
   url =    {http://proceedings.mlr.press/v80/ceylan18a.html},
   abstract =   {Many parametric statistical models are not properly normalised and only specified up to an intractable partition function, which renders parameter estimation difficult. Examples of unnormalised models are Gibbs distributions, Markov random fields, and neural network models in unsupervised deep learning. In previous work, the estimation principle called noise-contrastive estimation (NCE) was introduced where unnormalised models are estimated by learning to distinguish between data and auxiliary noise. An open question is how to best choose the auxiliary noise distribution. We here propose a new method that addresses this issue. The proposed method shares with NCE the idea of formulating density estimation as a supervised learning problem but in contrast to NCE, the proposed method leverages the observed data when generating noise samples. The noise can thus be generated in a semi-automated manner. We first present the underlying theory of the new method, show that score matching emerges as a limiting case, validate the method on continuous and discrete valued synthetic data, and show that we can expect an improved performance compared to NCE when the data lie in a lower-dimensional manifold. Then we demonstrate its applicability in unsupervised deep learning by estimating a four-layer neural image model.}
 }
