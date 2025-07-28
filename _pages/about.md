@@ -6,7 +6,7 @@ description:
   # <a href="https://www.kth.se/rpl/division-of-robotics-perception-and-learning-1.779439">KTH Robotics, Perception and Learning (RPL)</a>
   # <br>
   # <a href="https://seb.se/">Skandinaviska Enskilda Banken (SEB)</a>.
-  Grettings, and a warm welcome to my research profile! 
+  **Researcher, Data Scientist and Machine Learning Enginner**
 
 profile:
   align: right
