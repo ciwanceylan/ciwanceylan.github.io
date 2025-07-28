@@ -38,8 +38,34 @@ pages = {3658–3662},
 numpages = {5},
 keywords = {feature selection, linear independence, scalability, unsupervised learning},
 location = {Boise, ID, USA},
-series = {CIKM '24}
+series = {CIKM '24},
+pdf={qmr_paper.pdf}
 }
+
+@misc{ceylan2022digraphwavescalableextractionstructural,
+      title={Digraphwave: Scalable Extraction of Structural Node Embeddings via Diffusion on Directed Graphs}, 
+      author={Ciwan Ceylan and Kambiz Ghoorchian and Danica Kragic},
+      year={Preprint},
+      eprint={2207.10149},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2207.10149},
+      pdf={digraphwave.pdf}, 
+      abstract={Structural node embeddings, vectors capturing local connectivity information for each node in a graph, have many applications in data mining and machine learning, e.g., network alignment and node classification, clustering and anomaly detection. For the analysis of directed graphs, e.g., transactions graphs, communication networks and social networks, the capability to capture directional information in the structural node embeddings is highly desirable, as is scalability of the embedding extraction method. Most existing methods are nevertheless only designed for undirected graph. Therefore, we present Digraphwave -- a scalable algorithm for extracting structural node embeddings on directed graphs. The Digraphwave embeddings consist of compressed diffusion pattern signatures, which are twice enhanced to increase their discriminate capacity. By proving a lower bound on the heat contained in the local vicinity of a diffusion initialization node, theoretically justified diffusion timescale values are established, and Digraphwave is left with only two easy-to-interpret hyperparameters: the embedding dimension and a neighbourhood resolution specifier. In our experiments, the two embedding enhancements, named transposition and aggregation, are shown to lead to a significant increase in macro F1 score for classifying automorphic identities, with Digraphwave outperforming all other structural embedding baselines. Moreover, Digraphwave either outperforms or matches the performance of all baselines on real graph datasets, displaying a particularly large performance gain in a network alignment task, while also being scalable to graphs with millions of nodes and edges, running up to 30x faster than a previous diffusion pattern based method and with a fraction of the memory consumption. }
+}
+
+@misc{ceylan2022graphdcaframeworknode,
+      title={GraphDCA -- a Framework for Node Distribution Comparison in Real and Synthetic Graphs}, 
+      author={Ciwan Ceylan and Petra Poklukar and Hanna Hultin and Alexander Kravchenko and Anastasia Varava and Danica Kragic},
+      year={Preprint},
+      eprint={2202.03884},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2202.03884}, 
+      pdf={graphdca.pdf},
+      abstract = {We argue that when comparing two graphs, the distribution of node structural features is more informative than global graph statistics which are often used in practice, especially to evaluate graph generative models. Thus, we present GraphDCA - a framework for evaluating similarity between graphs based on the alignment of their respective node representation sets. The sets are compared using a recently proposed method for comparing representation spaces, called Delaunay Component Analysis (DCA), which we extend to graph data. To evaluate our framework, we generate a benchmark dataset of graphs exhibiting different structural patterns and show, using three node structure feature extractors, that GraphDCA recognizes graphs with both similar and dissimilar local structure. We then apply our framework to evaluate three publicly available real-world graph datasets and demonstrate, using gradual edge perturbations, that GraphDCA satisfyingly captures gradually decreasing similarity, unlike global statistics. Finally, we use GraphDCA to evaluate two state-of-the-art graph generative models, NetGAN and CELL, and conclude that further improvements are needed for these models to adequately reproduce local structural features.}
+}
+
 
 
 @InProceedings{pmlr-v139-ceylan21a,
